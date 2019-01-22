@@ -6,11 +6,11 @@ router.get('/kmom01', function(req, res, next) {
     const questions = [
         {
             question: "Berätta utförligt om din syn på nodejs backend ramverk och berätta vilket ramverk du valde och varför.",
-            answer: "Jag gick igenom en del av de ramverk som var listade men jag djupdök inte ner i detalj i vad som skiljde de åt. Det ända jag kände igen var Express och då det var även detta ramverk som används i övningarna var det ett naturligt val att använda detta."
+            answer: "Jag gick igenom en del av de ramverk som var listade men jag djupdök inte ner i detalj i vad som skiljde de åt. Det enda jag kände igen var Express och då det var även detta ramverk som används i övningarna var det ett naturligt val att använda detta."
         },
         {
             question: "Berätta om din katalogstruktur och hur du organiserade din kod, hur tänkte du?",
-            answer: "Jag började med aatt kolla 'Express application generator', då jag märkte att det som skiljde i katalogstrukturen gentemot övningsexemplets struktur var katalogerna bin, public och views. Då denna applikationen inte kommer ha någon frontend förstod jag inte vitsen med att ha dessa kataloger med och valde att använda samma struktur som i övningsexemplet."
+            answer: "Jag började med att kolla 'Express application generator', och då jag märkte att det som skiljde i katalogstrukturen gentemot övningsexemplets struktur var katalogerna bin, public och views. Då denna applikationen inte kommer ha någon frontend förstod jag inte vitsen med att ha dessa kataloger med och valde att använda samma struktur som i övningsexemplet."
         },
         {
             question: "Använde du någon form av scaffolding som ditt valda ramverk erbjuder?",
