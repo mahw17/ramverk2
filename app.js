@@ -9,7 +9,7 @@ const register = require('./routes/register');
 const login = require('./routes/login');
 
 const app = express();
-const port = 1350;
+const port = 1340;
 
 app.use(cors());
 
