@@ -6,8 +6,10 @@ router.get('/', function(req, res, next) {
     const data = {
         result:true,
         name: "Marcus Holmersson",
+        akronym: "mahw17",
+        email: "mahw17@student.bth.se",
         city: "Jämjö, Blekinge",
-        description: "Produktionstekniker med ambition att hitta en ny plattform att sprida information och skapa enklare applikationer på.",
+        description: "<span>Produktionstekniker med ambition<br>att hitta en ny plattform att<br>sprida information och skapa<br>enklare applikationer på</span>",
     };
 
     res.json(data);
