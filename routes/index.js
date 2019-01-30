@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
         akronym: "mahw17",
         email: "mahw17@student.bth.se",
         city: "Jämjö, Blekinge",
-        description: "<span>Produktionstekniker med ambition<br>att hitta en ny plattform att<br>sprida information och skapa<br>enklare applikationer på</span>",
+        description: "Produktionstekniker med ambition att hitta en ny plattform att sprida information och skapa enklare applikationer på",
     };
 
     res.json(data);
