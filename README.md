@@ -8,7 +8,9 @@ Course page Ramverk2 - v2 @BTH
 Part of course Ramverk2 (framework), @BTH 2019.
 
 KMOM01 -    Setup Express backend API
+
 KMOM02 -    Added password cryptation and JWT token requiered to backen, draft of frontend
+
 KMOM03 -    Unittest, Docker and forms
 
 
@@ -16,7 +18,14 @@ KMOM03 -    Unittest, Docker and forms
 
 ## API token/User login
 ### To request an API token
-`POST /login/:email/:pwd`
+`POST /login`
+
+Request body according to:
+`{
+    "email":    ?,
+    "pwd":    ?
+}`
+
 Result:
 `{
     "result":true,
@@ -35,7 +44,14 @@ Or
 
 ## Register
 ### To add a new user
-`POST /register/:email/:pwd`
+`POST /register`
+
+Request body according to:
+`{
+    "email":    ?,
+    "pwd":    ?
+}`
+
 Result:
 `{
     "result":true,

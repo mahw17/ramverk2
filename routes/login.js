@@ -11,9 +11,9 @@ let security = new Security();
 
 
 /* Route for retrieving validation token */
-router.post('/:email/:pwd', function(req, res, next) {
+router.post('/', function(req, res, next) {
 
-    user.get(req.params.email, function(err, row){ // PART1 - Get user password from db
+    user.get(req.body.email, function(err, row){ // PART1 - Get user password from db
         if (err) {
             return res.json({err});
         } else if (typeof row === 'undefined') {
@@ -24,10 +24,11 @@ router.post('/:email/:pwd', function(req, res, next) {
             });
         }
 
-        security.checkPassword(req.params.pwd, row.password, function(result) { // PART2 - Check user input password against db password
+        security.checkPassword(req.body.pwd, row.password, function(result) { // PART2 - Check user input password against db password
+
             if (result) {
 
-                security.createToken(req.params.email, function(token){ // PART3 - If password match => Get token
+                security.createToken(req.body.email, function(token){ // PART3 - If password match => Get token
                     // Return token
                     return res.json({
                         result:true,

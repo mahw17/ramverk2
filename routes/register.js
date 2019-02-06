@@ -12,10 +12,10 @@ let security = new Security();
 
 
 /* Route for adding new user */
-router.post('/:email/:pwd', function(req, res, next) {
-    security.cryptPassword(req.params.pwd, function(hash) {
+router.post('/', function(req, res, next) {
+    security.cryptPassword(req.body.pwd, function(hash) {
 
-        user.add(req.params.email, hash, function(msg) {
+        user.add(req.body.email, hash, function(msg) {
             res.json(msg);
         });
     });
