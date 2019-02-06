@@ -1,15 +1,21 @@
 Course page Ramverk2 - v2 @BTH
 ========================================
+[![Build Status](https://travis-ci.com/mahw17/ramverk2.svg?branch=master)](https://travis-ci.com/mahw17/ramverk2)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mahw17/ramverk2/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mahw17/ramverk2/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/mahw17/ramverk2/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/mahw17/ramverk2/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/mahw17/ramverk2/badges/build.png?b=master)](https://scrutinizer-ci.com/g/mahw17/ramverk2/build-status/master)
+
 Part of course Ramverk2 (framework), @BTH 2019.
 
 KMOM01 -    Setup Express backend API
 KMOM02 -    Added password cryptation and JWT token requiered to backen, draft of frontend
+KMOM03 -    Unittest, Docker and forms
 
 
-#ME-API documentation#
+# ME-API documentation
 
-##API token/User login##
-###To request an API token###
+## API token/User login
+### To request an API token
 `POST /login/:email/:pwd`
 Result:
 `{
@@ -27,8 +33,8 @@ Or
     "err": "Password not valid."
 }`
 
-##Register##
-###To add a new user###
+## Register
+### To add a new user
 `POST /register/:email/:pwd`
 Result:
 `{
@@ -42,8 +48,8 @@ Errors:
 }`
 
 
-##Report##
-###To get an existing report###
+## Report
+### To get an existing report
 `GET /report/:report`
 Result:
 `{
@@ -56,7 +62,7 @@ Errors:
     "err": db-error notification of some kind...
 }`
 
-###To add a report###
+### To add a report
 `Post /report`
 Request body according to:
 `{
