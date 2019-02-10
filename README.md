@@ -13,6 +13,8 @@ KMOM02 -    Added password cryptation and JWT token requiered to backen, draft o
 
 KMOM03 -    Unittest, Docker and forms
 
+KMOM04 -    Intergration tests.
+
 
 # ME-API documentation
 

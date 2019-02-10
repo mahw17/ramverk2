@@ -1,5 +1,8 @@
 node_modules/
 
+# Database
+db/texts.sqlite
+
 # Logs
 logs
 *.log

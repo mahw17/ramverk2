@@ -30,4 +30,7 @@ app.use('/login', login);
 
 
 // Start up server
-app.listen(port, () => console.log(`Example API listening on port ${port}!`));
+const server = app.listen(port, () => console.log(`Example API listening on port ${port}!`));
+
+// Export server
+module.exports = server;
